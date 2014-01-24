@@ -1,0 +1,51 @@
+@{meta('Contact me', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry', 'contact, me')}
+@{prev('/about/')}
+@{next('/')}
+
+<div class="content-padding">
+	<hr />
+	<br />
+	<article>
+		<h2>Peter Širka - Senior Web Developer</h2>
+		<div class="fs11">
+			<div><a href="mailto:petersirka@gmail.com" class="go">petersirka@gmail.com</a></div>
+		</div>
+		<br />
+		<br />
+		@{content('social')}
+		<br />
+	</article>
+	<br />
+	<hr />
+	<br />
+	<h2>Contact form</h2>
+	<br />
+	<div class="message-success mb20 hidden" id="success">
+		<span class="icon-ok-sign"></span> Thank you. Form was submitted successfully.
+	</div>
+
+	<form action="#xhr" method="post" id="f">
+		<div class="form">
+			<div class="required">Name</div>
+			<div>@{text('Name', { maxlength: 50, placeholder: 'your name' })}</div>
+		</div>
+		<div class="form">
+			<div class="required">E-mail</div>
+			<div>@{text('Email', { maxlength: 200 })}</div>
+		</div>
+		<div class="form">
+			<div class="required">Message</div>
+			<div>@{textarea('Message')}</div>
+		</div>
+		<div class="cl">&nbsp;</div>
+	</form>
+
+	<div class="form">
+		<div>&nbsp;</div>
+		<div>
+			<div class="message-alert" id="error"></div>
+			<button name="submit" class="button">Submit comment</button>
+		</div>
+	</div>
+	<div class="cl">&nbsp;</div>
+</div>

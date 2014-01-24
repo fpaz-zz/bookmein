@@ -1,0 +1,26 @@
+@{layout('')}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="format-detection" content="telephone=no" />
+<head>
+<body style="background-color: #F0F0F0; padding: 50px; color: gray; font: normal 12px Arial">
+    <div style="width:600px; margin:0 auto; background-color: white; padding: 25px">
+        <div style="font: bold 20px Arial; padding: 15px 0 10px 0; color: black; border-bottom: 1px dotted #D0D0D0; margin-bottom: 20px; text-align:center">CONTACT FORM</div>
+        <div><b>Date created</b>:</div>
+        <div class="value">@{model.DateCreated.format('dd.MM.yyyy / HH:mm')}</div>
+        <br />
+        <div><b>Name</b>:</div>
+        <div style="margin-top: 2px; line-height: 16px">@{model.Name}</div>
+        <br />
+        <div><b>E-mail</b>:</div>
+        <div style="margin-top: 2px; line-height: 16px"><a href="mailto:@{model.Email}" style="color:black">@{model.Email}</a></div>
+        <br />
+        <div><b>Message</b>:</div>
+        <div style="margin-top: 2px; line-height: 16px">@{!model.Message}</div>
+    </div>
+</body>
+</html>

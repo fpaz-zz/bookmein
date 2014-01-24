@@ -1,0 +1,19 @@
+@{meta('My references', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry', 'references')}
+@{prev('/about/')}
+@{next('/contact/')}
+
+<br />
+<div class="bg-smoke">
+	<br />
+	<br />
+	@{template('references', [{ url: 'http://partialjs.com', name: 'www.partialjs.com', picture: 'partialjs.jpg'},
+							  { url: 'http://partialjs.com', name: 'www.partialjs.com', picture: 'partialjs.jpg'},
+							  { url: 'http://partialjs.com', name: 'www.partialjs.com', picture: 'partialjs.jpg'},
+							  { url: 'http://partialjs.com', name: 'www.partialjs.com', picture: 'partialjs.jpg'},
+							  { url: 'http://partialjs.com', name: 'www.partialjs.com', picture: 'partialjs.jpg'},
+							  { url: 'http://partialjs.com', name: 'www.partialjs.com', picture: 'partialjs.jpg'},
+							  { url: 'http://partialjs.com', name: 'www.partialjs.com', picture: 'partialjs.jpg'}])}
+</div>
+<div class="content-padding" style="padding-top:0">
+	@{content('contact')}
+</div>

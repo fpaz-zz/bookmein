@@ -1,0 +1,50 @@
+@{meta('My sweet website', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry', 'keywords, sweet, website')}
+@{next('/services/')}
+
+<div class="content-padding">
+	<div class="banner">
+		@{image('banner.jpg', 880, 300, 'Advert')}
+	</div>
+	<br />
+	<br />
+	<ul class="services">
+		<li>
+			<span class="icon-code"></span>
+			<h2>Website development</h2>
+			<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+		</li>
+		<li>
+			<span class="icon-picture"></span>
+			<h2>Graphic design and DTP</h2>
+			<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+		</li>
+		<li>
+			<span class="icon-desktop"></span>
+			<h2>Software development</h2>
+			<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+		</li>
+	</ul>
+	<div class="cl">&nbsp;</div>
+	<br />
+	<hr />
+	<br />
+	<ul class="services">
+		<li>
+			<span class="icon-search"></span>
+			<h2>Optimalization (SEO)</h2>
+			<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+		</li>
+		<li>
+			<span class="icon-tasks"></span>
+			<h2>Analyses and marketing</h2>
+			<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+		</li>
+		<li class="services-high">
+			<span class="icon-hand-right"></span>
+			<h2>My work</h2>
+			<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <a href="/references/" class="go">References</a></div>
+		</li>
+	</ul>
+	<div class="cl">&nbsp;</div>
+	@{content('contact')}
+</div>
